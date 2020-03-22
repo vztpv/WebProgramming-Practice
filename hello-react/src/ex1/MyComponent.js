@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-const MyCommponet = props => {
+const MyCommponent = props => {
     return (
         <div>
             {props.name} <br />
@@ -10,8 +10,8 @@ const MyCommponet = props => {
     );
 };
 
-MyCommponet.defaultProps = {
+MyCommponent.defaultProps = {
     name: 'default'
 }
 
-export default MyCommponet;
+export default MyCommponent;

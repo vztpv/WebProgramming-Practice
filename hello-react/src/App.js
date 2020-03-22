@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import MyCommponet from './ex1/MyComponent.js';
+import MyCommponent from './ex3/MyComponent.js';
 
 function App() {
   return (
     <div className="React">
-      <MyCommponet name="wow"> <br /> TEST <br />
-      </MyCommponet>
-    </div>
+      <MyCommponent name='hello' favoriteNumber={33}> <br /> TEST <br />
+      </MyCommponent>
+    </div >
   );
 }
 
