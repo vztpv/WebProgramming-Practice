@@ -1,17 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
-import MyCommponent from './ex3/MyComponent.js';
-import Counter from './ex4/Counter.js'
-import Say from './ex5/Say.js'
-import EventPractice from './ex8/EventPractice.js'
+import ScrollBox from './ex10/ScrollBox.js';
 
-const App = () => {
-  return (
-    <div className="React">
-      <Say />
-      <EventPractice />
-    </div >
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="React" >
+        <ScrollBox ref={(ref) => this.ScrollBox = ref} />
+        <button onClick={() => this.ScrollBox.scrollToBottom()}>
+          to bottom
+      </button>
+      </div >
+    );
+  }
 }
 
 export default App;
